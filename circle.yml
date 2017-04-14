@@ -1,0 +1,14 @@
+dependencies:
+  pre:
+    - npm install -g grunt-cli
+    - npm install
+
+test:
+  override:
+    - /bin/true
+
+deployment:
+  production:
+    branch: production
+    commands:
+      - grunt deploy:production
